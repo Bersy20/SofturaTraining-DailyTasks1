@@ -1,0 +1,53 @@
+﻿@model BookDropDownProject.Models.BookModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Index", "Book", FormMethod.Post))
+        {
+            <table>
+                <tr>
+                    <td>
+                        Book:
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(m => m.BookId, Model.Books, "Please select")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Quantity:
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(m => m.Quantity)
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        }
+        @if (ViewBag.Message != null)
+        {
+            <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+            </script>
+        }
+    </div>
+</body>
+</html>

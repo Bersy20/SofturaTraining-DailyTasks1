@@ -1,0 +1,29 @@
+﻿@model System.Data.DataTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <div>
+        <form id="frmUpdateBook" method="post" action="@Url.Action("Update")">
+            Book ID :<input name="txtBid" value="@Model.Rows[0]["BookID"]"/>
+            <br />
+            Book Title :<input name="txtTitle" value="@Model.Rows[0]["Title"]"/>
+            <br />
+            Author ID : <input name="txtAid" value="@Model.Rows[0]["AuthorID"]"/>
+            <br />
+            Price : <input name="txtPrice" value="@Model.Rows[0]["Price"]"/>
+            <br />
+            <input type="submit" value="Update" name="action" />
+            <input type="submit" value="Cancel" name="action" />
+        </form>
+    </div>
+</body>
+</html>

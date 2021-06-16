@@ -1,0 +1,66 @@
+﻿@using System.Data
+@model System.Data.DataTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Insert</title>
+</head>
+<body>
+    <div>
+        <form id="frmNewBook" method="post" action="@Url.Action("InsertRecord")">
+            Book Title :<input name="txtTitle" />
+            <br />
+            <label>Author ID : </label>
+            @*<select name="txtAid" >
+        <option selected>Select Author Id</option>
+        @foreach(DataRow dr in Model.Rows)
+        {
+            <option value="@dr["AuthorID"].ToString()">@dr["AuthorID"].ToString()</option>
+        }
+        </select>*@
+            <select name="txtAName">
+                <option selected>Select Author Name</option>
+                @foreach (DataRow dr in Model.Rows)
+                {
+                    <option value="@dr["AuthorName"].ToString()">@dr["AuthorName"].ToString()</option>
+                }
+            </select>
+            <br />
+            Price : <input name="txtPrice" />
+            <br />
+            <input type="submit" value="Submit" name="action" />
+            <input type="submit" value="Cancel" name="action" />
+        </form>
+    </div>
+    <form method="post" name="Display">
+        <h2>List Of Authors</h2>
+        @{
+            if (Model.Rows.Count > 0)
+            {
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>Author ID</td>
+                            <td>Author Name</td>
+                        </tr>
+                    </thead>
+                    @foreach (DataRow dr in Model.Rows)
+                    {
+                        <tr>
+                            <td>@dr["AuthorID"].ToString()</td>
+                            <td>@dr["AuthorName"].ToString()</td>
+                          
+                        </tr>
+                    }
+                </table>
+            }
+        }
+    </form>
+</body>
+</html>

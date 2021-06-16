@@ -1,0 +1,7 @@
+D:\SOFTURA\Technical Training\Day32\ExploreBD\bin\Debug\ExploreBD.exe.config
+D:\SOFTURA\Technical Training\Day32\ExploreBD\bin\Debug\ExploreBD.exe
+D:\SOFTURA\Technical Training\Day32\ExploreBD\bin\Debug\ExploreBD.pdb
+D:\SOFTURA\Technical Training\Day32\ExploreBD\obj\Debug\ExploreBD.csproj.AssemblyReference.cache
+D:\SOFTURA\Technical Training\Day32\ExploreBD\obj\Debug\ExploreBD.csproj.CoreCompileInputs.cache
+D:\SOFTURA\Technical Training\Day32\ExploreBD\obj\Debug\ExploreBD.exe
+D:\SOFTURA\Technical Training\Day32\ExploreBD\obj\Debug\ExploreBD.pdb
