@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$("#p1").mouseenter(function () {
+            //    alert("Your mouse entered the paragraph")
+            //})
+
+            //$("#p1").mouseleave(function () {
+            //    $(this).css("background-color", "aqua");
+            //})
+
+            $("li").click(function () {
+                alert($(this).text());
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>choco</li>
+            <li>Ice</li>
+            <li>Fruits</li>
+        </ul>
+        <h2>
+            Explore Mouse Enter
+        </h2>
+        <p id="p1">Bring your cursor to paragraph</p>
+    </div>
+</body>
+</html>

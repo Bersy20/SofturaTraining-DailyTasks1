@@ -70,3 +70,5 @@ D:\SOFTURA\Technical Training\Day32\MVCwithADO2\obj\Debug\MVCwithADO2.csproj.Cor
 D:\SOFTURA\Technical Training\Day32\MVCwithADO2\obj\Debug\MVCwithADO2.csproj.CopyComplete
 D:\SOFTURA\Technical Training\Day32\MVCwithADO2\obj\Debug\MVCwithADO2.dll
 D:\SOFTURA\Technical Training\Day32\MVCwithADO2\obj\Debug\MVCwithADO2.pdb
+D:\SOFTURA\Technical Training\GitActivity\June14_Activity\MVCwithADO2\obj\Debug\MVCwithADO2.dll
+D:\SOFTURA\Technical Training\GitActivity\June14_Activity\MVCwithADO2\obj\Debug\MVCwithADO2.pdb
