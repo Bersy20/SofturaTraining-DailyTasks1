@@ -1,0 +1,63 @@
+﻿@using System.Data
+@model System.Data.DataTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        text-align: center;
+    }
+   
+</style>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Insert</title>
+</head>
+<body>
+    <div>
+        <br />
+        <h1>List Of Employees in @TempData.Peek("Dept").ToString()</h1>
+        @{
+            if (Model.Rows.Count > 0)
+            {
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Department Name</td>
+                            <td>Department ID</td>
+                            <td>Business Entity ID</td>
+                            <td>First Name</td>
+                            <td>Gender</td>
+                            <td>Marital Status</td>
+                            <td>Hire Date</td>
+                        </tr>
+                    </thead>
+                    @foreach (DataRow dr in Model.Rows)
+                    {
+                        <tr>
+                            <td>@dr["Name"].ToString()</td>
+                            <td>@dr["DepartmentID"].ToString()</td>
+                            <td>@dr["BusinessEntityID"].ToString()</td>
+                            <td>@dr["FirstName"].ToString()</td>
+                            <td>@dr["Gender"].ToString()</td>
+                            <td>@dr["MaritalStatus"].ToString()</td>
+                            <td>@dr["HireDate"].ToString()</td>
+
+                        </tr>
+                    }
+                </table>
+            }
+        }
+    </div>
+
+</body>
+</html>
