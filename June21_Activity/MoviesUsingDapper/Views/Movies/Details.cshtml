@@ -1,0 +1,32 @@
+﻿@model MoviesUsingDapper.Models.MoviesModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Movies)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Movies)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {id = Model.No}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
