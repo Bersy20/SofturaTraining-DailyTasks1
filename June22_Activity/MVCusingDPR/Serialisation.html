@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                event.preventDefault();
+                $("div").text($("form").serialize());
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+        Place Of Interest: <input type="text" name="place" value="" /><br />
+        City/Country: <input type="text" name="city" value="" /><br />
+        <button>Serialise Data</button>
+    </form>
+    <div></div>
+</body>
+</html>
